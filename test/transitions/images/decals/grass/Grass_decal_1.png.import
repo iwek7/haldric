@@ -4,6 +4,10 @@ importer="texture"
 type="StreamTexture"
 path.s3tc="res://.import/Grass_decal_1.png-c29b318a0ed014fb80d5d2a5f4fce423.s3tc.stex"
 path.etc2="res://.import/Grass_decal_1.png-c29b318a0ed014fb80d5d2a5f4fce423.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
 
 [deps]
 
@@ -15,6 +19,7 @@ dest_files=[ "res://.import/Grass_decal_1.png-c29b318a0ed014fb80d5d2a5f4fce423.s
 compress/mode=2
 compress/lossy_quality=1.0
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=false
@@ -24,6 +29,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=false

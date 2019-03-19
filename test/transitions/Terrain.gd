@@ -58,12 +58,12 @@ func setup():
 	for child in container.get_children():
 			child.free()
 
-	DIR[S] = "s"
-	DIR[SW] = "sw"
-	DIR[NW] = "nw"
-	DIR[N] = "n"
-	DIR[NE] = "ne"
-	DIR[SE] = "se"
+	DIR[DIRECTION.S] = "s"
+	DIR[DIRECTION.SW] = "sw"
+	DIR[DIRECTION.NW] = "nw"
+	DIR[DIRECTION.N] = "n"
+	DIR[DIRECTION.NE] = "ne"
+	DIR[DIRECTION.SE] = "se"
 
 	terrain = TileMap.new()
 	terrain.cell_size = Vector2(192, 256)
