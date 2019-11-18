@@ -124,9 +124,12 @@ func _set_current_unit(value: Unit) -> void:
 	if current_unit:
 		#HUD.update_unit_info(current_unit)
 		scenario.map.display_reachable_for(current_unit.reachable)
+		if(current_unit.location.is_recruitment_location()):
+			HUD.set_recruitment_allowed(true)
 	else:
 		# HUD.clear_unit_info()
 		_clear_temp_path()
+		HUD.set_recruitment_allowed(false)
 
 func _get_path_for_unit(unit: Unit, new_loc: Location) -> Array:
 	if unit.reachable.has(new_loc):

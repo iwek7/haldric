@@ -71,3 +71,6 @@ func get_adjacent_locations() -> Array:
 		if neighbor:
 			neighbor_locations.append(neighbor)
 	return neighbor_locations
+
+func is_recruitment_location():
+	return terrain.recruit_from

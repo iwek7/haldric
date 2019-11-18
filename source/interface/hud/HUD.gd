@@ -30,6 +30,9 @@ func update_time_info(time: Time) -> void:
 
 func update_unit_info(unit : Unit) -> void:
 	unit_panel.update_unit(unit)
+	
+func set_recruitment_allowed(is_allowed : bool) -> void:
+	unit_panel.set_recruitment_allowed(is_allowed)
 
 func update_side_info(scenario : Scenario, side : Side) -> void:
 	side_panel.update_side(scenario, side)

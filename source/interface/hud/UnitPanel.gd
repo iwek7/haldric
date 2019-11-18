@@ -21,6 +21,8 @@ onready var alignment := $NinePatchRect/CenterContainer/VBoxContainer/Aligment
 onready var resistance := $NinePatchRect/CenterContainer/VBoxContainer/ResistancePlate as Control
 
 onready var attacks := $NinePatchRect/CenterContainer/VBoxContainer/Attacks as VBoxContainer
+onready var recruitment_button := $NinePatchRect/RecruitButton as Button
+
 
 onready var tween := $Tween as Tween
 
@@ -71,6 +73,9 @@ func update_unit(target: Unit) -> void:
 	for attack in unit.type.get_attacks():
 		_add_attack_plate(attack)
 
+func set_recruitment_allowed(is_allowed : bool):
+	recruitment_button.visible = is_allowed
+	
 func clear_unit() -> void:
 	unit = null
 
