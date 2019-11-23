@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://graphics/images/interface/panels.png" type="Texture" id=2]
+[ext_resource path="res://source/interface/hud/UnitRecruitmentCard.gd" type="Script" id=3]
+
+[node name="UnitRecruitmentCard" type="Control"]
+margin_right = 122.0
+margin_bottom = 80.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UnitRecruitmentCardHbox" type="HBoxContainer" parent="."]
+margin_right = 122.0
+margin_bottom = 80.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Avatar" type="TextureRect" parent="UnitRecruitmentCardHbox"]
+margin_bottom = 80.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UnitRecruitmentCardHbox"]
+margin_left = 8.0
+margin_right = 8.0
+margin_bottom = 80.0
+mouse_filter = 2
+text = "aaa"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+margin_right = 122.0
+margin_bottom = 80.0
+texture = ExtResource( 2 )
+region_rect = Rect2( 40, 0, 20, 20 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
